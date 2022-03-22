@@ -1,4 +1,6 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap");
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +12,222 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+body {
+  width: 100%;
+}
+
+.navbar {
+  position: absolute;
+  width: 1440px;
+  height: 140px;
+  left: 0px;
+  top: 0px;
+  background: #292929;
+}
+
+.logo {
+  position: absolute;
+  width: 193px;
+  height: 60px;
+  left: 77px;
+  top: 40px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigDisplay {
+  position: absolute;
+  width: 1440px;
+  height: 550px;
+  left: 0px;
+  top: 138px;
+
+  background-image: url(./images/CinemaHall.jpg);
+}
+
+.bigDisplay .text {
+  position: absolute;
+  width: 490px;
+  height: 282px;
+  left: 77px;
+  top: 107px;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 94px;
+  letter-spacing: -0.05em;
+
+  color: #ffffff;
+}
+
+.search {
+  margin: 0 77px;
+  position: absolute;
+  top: 751px;
+  left: 77;
+}
+
+.searchInput form {
+  display: grid;
+}
+
+.searchInput label {
+  position: static;
+  width: 77px;
+  height: 31px;
+  left: 0px;
+  top: 0px;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+
+.searchInput input {
+  position: static;
+  width: 1306px;
+  height: 54px;
+  left: 0px;
+  top: 35px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+
+.moviesCategory {
+  display: grid;
+}
+
+.seriesCategory {
+  display: grid;
+}
+
+.moviesHeading,
+.seriesHeading {
+  /* position: relative;
+  width: 279px;
+  height: 31px;
+  left: 67px;
+  top: 888px; */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+
+  color: #000000;
+}
+
+.seriesHeading .loading,
+.error {
+  text-align: center;
+  font-size: large;
+  font-weight: 400;
+  font-family: "DM Sans";
+}
+
+.moviesDisplay {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.seriesDisplay {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.moviesDisplay .movie {
+  position: static;
+  width: 300px;
+  height: 300px;
+  left: 0px;
+  top: 0px;
+
+  background: #000000;
+  border-radius: 12px;
+
+  display: flex;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 13px;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+}
+
+.seriesDisplay .series {
+  position: static;
+  width: 300px;
+  height: 300px;
+  left: 0px;
+  top: 0px;
+
+  background: #000000;
+  border-radius: 12px;
+
+  display: flex;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 13px;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+}
+
+/* design for iPad screens */
+
+@media screen and (max-width: 840px) {
+}
+
+/* design for iPhone SE */
+
+@media screen and (max-width: 320px) {
 }
